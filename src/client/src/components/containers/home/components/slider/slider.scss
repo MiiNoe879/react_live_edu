@@ -1,0 +1,75 @@
+.slider {
+  min-height: 882px;
+  background-image: url('../../../../../assets/img/home/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  @extend %container;
+  display: flex;
+}
+
+.left {
+  width: calc(100% - 348px);
+  padding-right: 110px;
+}
+
+.right {
+  width: 348px;
+}
+
+.title {
+  font-size: 42px;
+  color: #fbfbfb;
+  font-weight: 700;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  line-height: 26px;
+  margin-bottom: 0;
+}
+
+.list {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 64px;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  &-icon {
+    width: 40px;
+    line-height: 0;
+  }
+}
+
+.form {
+  background-color: #fff;
+  padding: 32px 32px;
+
+  &-title {
+    font-size: 24px;
+    color: #73859f;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  &-text {
+    font-size: 12px;
+    color: #73859f;
+    text-align: center;
+    margin-top: 40px;
+  }
+}

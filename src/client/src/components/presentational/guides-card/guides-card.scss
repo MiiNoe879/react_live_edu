@@ -1,0 +1,56 @@
+.card {
+  width: 168px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 400;
+  color: #424242;
+  @extend %word-break;
+}
+
+.thumb {
+  margin-bottom: 12px;
+  width: 100%;
+  min-height: 256px;
+  background-color: #acbbc5;
+  color: #424242;
+  font-size: 13px;
+}
+
+.desc {
+  .counts {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.projects {
+  margin-left: 24px;
+}
+
+.followers,
+.projects {
+  display: flex;
+  align-items: center;
+
+  .icon {
+    font-size: 16px;
+    margin-right: 4px;
+    color: $blue;
+  }
+
+  .value {
+    font-size: 13px;
+    color: #58595b;
+    line-height: 16px;
+  }
+}

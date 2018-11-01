@@ -1,0 +1,11 @@
+.project-watch {
+  background-color: #2b2b2b;
+  color: #fff;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  &-container {
+    display: flex;
+    @extend %container;
+  }
+}

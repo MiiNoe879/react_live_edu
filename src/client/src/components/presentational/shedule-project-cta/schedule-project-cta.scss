@@ -1,0 +1,43 @@
+.schedule-project-cta {
+  padding-bottom: 32px;
+  margin-top: 8px;
+  background-color: #fbfbfb;
+  border-radius: 8px;
+  padding: 24px 32px;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #424242;
+}
+
+.text {
+  font-size: 13px;
+  color: #424242;
+  line-height: 22px;
+  margin-bottom: 24px;
+}
+
+.cta {
+  display: inline-block;
+  background-color: $blue;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 16px 45px;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 2px 1px rgb(31, 98, 143);
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2b85c2;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}

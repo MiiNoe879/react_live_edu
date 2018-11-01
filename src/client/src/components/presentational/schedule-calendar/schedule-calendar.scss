@@ -1,0 +1,125 @@
+.calendar-container {
+  .calendar {
+    background-color: #fbfbfb;
+    border: 0;
+    border-radius: 8px;
+    padding: 24px 32px;
+    margin-top: 8px;
+
+    :global {
+      .react-calendar__navigation {
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+        &__label {
+          flex-grow: initial !important;
+          background-color: transparent;
+          font-size: 14px;
+          color: #849ab8;
+          min-width: 106px;
+          padding: 0 16px;
+        }
+
+        &__arrow {
+          padding: 1px 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:hover,
+          &:focus {
+            background-color: transparent;
+          }
+        }
+      }
+
+      .react-calendar__month-view__weekdays {
+        &__weekday {
+          color: #424242;
+          font-size: 11px;
+          text-transform: capitalize;
+        }
+      }
+
+      .react-calendar__month-view__days {
+        &__day {
+          font-size: 11px;
+          color: #424242;
+
+          &--neighboringMonth {
+            color: #e5e5e5;
+
+            &.react-calendar__month-view__days__day--weekend {
+              color: #e5e5e5;
+            }
+          }
+
+          &--weekend {
+            color: $red;
+          }
+        }
+      }
+
+      .react-calendar__tile {
+        &--now {
+          border: 1px solid #dddddd;
+        }
+
+        &--active {
+          border-color: transparent;
+          background-color: #73859f;
+          color: #fff;
+
+          &:focus,
+          &:hover {
+            background-color: #73859f;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin-bottom: 0;
+  font-size: 20px;
+  color: #424242;
+  font-weight: 600;
+}
+
+.timezone {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &-label {
+    font-size: 12px;
+    color: #aaaaaa;
+  }
+
+  &-select {
+    font-size: 12px;
+    color: #424242;
+    font-weight: 600;
+    text-align-last: right;
+    border: 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+    width: 102px;
+    padding: 6px 4px;
+
+    option {
+      direction: rtl;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

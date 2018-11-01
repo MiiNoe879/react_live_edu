@@ -1,0 +1,22 @@
+.details {
+  display: flex;
+  margin-top: 16px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+  background-color: #424242;
+  border: 3px solid #424242;
+  border-radius: 50%;
+  overflow: hidden;
+
+  &-img {
+    width: 100%;
+  }
+}
+
+.content {
+  width: calc(100% - (48px + 16px));
+}

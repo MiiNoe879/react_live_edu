@@ -1,0 +1,51 @@
+/*
+Container XL width excluding padding is 1142px
+*/
+
+// Container
+$site-min-width: 1262px;
+$site-container-max-width-xl: 1190px;
+$main-container-padding: 24px;
+
+// Header
+$site-header-height: 72px;
+
+// Main left-side navigation
+$site-navigation-width: 72px;
+$site-navigation-logo-height: $site-header-height;
+$site-navigation-link-size: 64px;
+
+// Z-index
+$site-navigation-dropdown: 100;
+
+// Brand colors
+$black: #16191e;
+$blackLight: #22282e;
+$red: #e3585e;
+$gold: #ca9729;
+$blue: #2574a9;
+
+// Social colors
+$social-google: #f4515e;
+$social-windows: #3097db;
+$social-facebook: #3097db;
+$social-github: #424242;
+$social-vk: #5181b8;
+$social-twitch: #6858a6;
+$social-linkedin: #2574a9;
+$social-qq: #424242;
+$social-yahoo: #8e3b94;
+$social-twitter: #1da1f2;
+
+// Search bar colors
+$searchBarHeight: 32px;
+
+// Notes on design v2
+// Container XL width excluding padding is 1302px
+// Container MD width excluding padding is 1092px
+
+// Navigation width = 92px
+// Main container width XL = 1348px
+// Main container width MD = 1130px
+
+// Breakpoint XL = 1442px

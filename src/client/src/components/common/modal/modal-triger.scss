@@ -1,0 +1,21 @@
+.modal-button {
+  display: inline-block;
+  background-color: $blue;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 16px 45px;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 2px 1px rgb(31, 98, 143);
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2b85c2;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}

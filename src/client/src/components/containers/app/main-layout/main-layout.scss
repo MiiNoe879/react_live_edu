@@ -1,0 +1,7 @@
+.wrapper {
+  padding-left: $site-navigation-width;
+}
+
+.app {
+  min-height: calc(100vh - #{$site-header-height});
+}

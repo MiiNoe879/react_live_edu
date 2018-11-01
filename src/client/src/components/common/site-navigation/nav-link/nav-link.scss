@@ -1,0 +1,49 @@
+.link {
+  color: #424242;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  height: $site-navigation-link-size;
+  width: $site-navigation-link-size;
+
+  &:hover {
+    text-decoration: none;
+    color: #424242;
+    background-color: #fbfbfb;
+  }
+}
+
+.active {
+  background-color: #fbfbfb;
+  border-radius: 2px;
+}
+
+.live {
+  color: $red;
+
+  &:hover {
+    color: $red;
+  }
+}
+
+.subscribe {
+  color: #d69b1c;
+
+  &:hover {
+    color: #d69b1c;
+  }
+
+  &.active {
+    background-color: #efae1e;
+    color: #fff;
+
+    .icon {
+      svg {
+        path {
+          fill: #fff !important;
+        }
+      }
+    }
+  }
+}

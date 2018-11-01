@@ -1,0 +1,167 @@
+.card {
+  display: flex;
+  align-items: flex-start;
+}
+
+.votes {
+  width: 72px;
+  height: 72px;
+  border-radius: 2px;
+  background-color: #9cbf63;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  font-size: 14px;
+  position: relative;
+  margin-top: 16px;
+
+  &:hover + .content {
+    border: 1px solid #9cbf63;
+  }
+
+  &.can-vote {
+    height: 58px;
+  }
+
+  &-button {
+    border: 1px solid #9cbf63;
+    background-color: #fff;
+    color: #9cbf63;
+    cursor: pointer;
+    width: 72px;
+    height: 38px;
+    position: absolute;
+    bottom: -36px;
+
+    &[disabled] {
+      cursor: initial;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+
+    .icon {
+      font-size: 16px;
+    }
+  }
+}
+
+.content {
+  flex: 1;
+  border: 1px solid #fbfbfb;
+  border-radius: 4px;
+  background-color: #fbfbfb;
+  margin-left: -36px;
+  padding: 26px 24px 20px 52px;
+
+  &:hover {
+    border: 1px solid #9cbf63;
+  }
+}
+
+.title {
+  margin-bottom: 6px;
+  font-size: 18px;
+  color: #424242;
+  font-weight: 600;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.text {
+  margin-bottom: 0;
+  font-size: 13px;
+  color: #424242;
+}
+
+.create-button {
+  background-color: transparent;
+  border: 1px solid $blue;
+  color: $blue;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  align-self: flex-start;
+  padding: 4px 8px;
+  min-width: 144px;
+  text-align: center;
+
+  &:hover {
+    background-color: $blue;
+    color: #fff;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+
+  .left,
+  .right {
+    display: flex;
+    align-items: center;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
+
+.language {
+  margin-bottom: 0;
+  font-size: 11px;
+  color: #aaaaaa;
+  line-height: 22px;
+}
+
+.topic {
+  margin-bottom: 0;
+
+  svg {
+    width: 16px !important;
+    height: auto !important;
+  }
+}
+
+.category {
+  margin-bottom: 0;
+
+  img {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.user {
+  margin-bottom: 0;
+  font-size: 11px;
+  color: #aaaaaa;
+  margin-right: 16px;
+
+  &-name {
+    font-size: 11px;
+    color: #333333;
+    font-weight: 600;
+  }
+}
+
+.date {
+  margin-bottom: 0;
+  font-size: 11px;
+  color: #aaaaaa;
+}

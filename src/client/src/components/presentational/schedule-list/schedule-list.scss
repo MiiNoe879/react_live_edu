@@ -1,0 +1,31 @@
+.schedule-list {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.title {
+  background-color: #73859f;
+  font-size: 12px;
+  color: #fdfdfd;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 7px 20px 6px;
+  margin-bottom: 22px;
+
+  &-caption {
+    font-size: 12px;
+    color: #999999;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.item {
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 12px;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,52 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  flex-flow: column;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title {
+  font-size: 22px;
+  color: #fdfdfd;
+  margin-bottom: 0;
+}
+
+.text {
+  font-size: 12px;
+  color: #aaaaaa;
+  margin-bottom: 0;
+}
+
+.user {
+  font-size: 12px;
+  color: #3097db;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.divider {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.counter {
+  font-size: 12px;
+  color: #e5e5e5;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 16px;
+  color: #73859f;
+  margin-right: 8px;
+}

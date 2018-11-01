@@ -1,0 +1,41 @@
+.list {
+  display: flex;
+  justify-content: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.items {
+  width: 50%;
+
+  &-left {
+    padding-left: 152px;
+  }
+
+  &-right {
+    padding-left: 48px;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.text {
+  font-size: 14px;
+  color: #424242;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 24px;
+}

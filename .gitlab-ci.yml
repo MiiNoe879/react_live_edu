@@ -1,0 +1,43 @@
+stages:
+  - build-app
+  - rebuild-nginx
+  - release
+
+build-app:
+  stage: build-app
+  services:
+    - docker:dind
+  image: docker:git
+  script:
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+    - >-
+      docker build --pull
+      --build-arg PROJECT_GIT_VERSION=$(git describe --tags --always)
+      --build-arg DEBUG=$([ -n "$CI_COMMIT_TAG" -o "$CI_COMMIT_REF_NAME" = "release" -o "$CI_COMMIT_REF_NAME" = "staging" ] && echo "False" || echo "True")
+      -t ${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_SLUG} .
+    - docker push ${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_SLUG}
+  tags:
+    - docker-builder
+  except:
+    - /^wip[\/_-].+$/
+
+release:
+  stage: release
+  services:
+    - docker:dind
+  image: docker:latest
+  script:
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+    - docker pull ${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_SLUG}
+    - docker tag ${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_SLUG} ${CI_REGISTRY_IMAGE}:latest
+    - docker push ${CI_REGISTRY_IMAGE}:latest
+  dependencies: []
+  tags:
+    - docker-builder
+  only:
+    - release
+
+rebuild-nginx:
+  stage: rebuild-nginx
+  script:
+    - "curl -X POST -F token=$REBUILD_NGINX_TOKEN -F ref=$CI_COMMIT_REF_NAME https://git.liveedu.tv/api/v4/projects/11/trigger/pipeline"

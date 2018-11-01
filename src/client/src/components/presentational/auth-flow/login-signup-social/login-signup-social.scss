@@ -1,0 +1,189 @@
+.login-signup-social {
+  &.compact {
+    display: flex;
+    justify-content: space-between;
+
+    .links {
+      grid-template-columns: repeat(5, 1fr);
+      grid-column-gap: 6px;
+      grid-row-gap: 6px;
+      width: 254px;
+    }
+
+    .link {
+      padding: 6px 12px;
+    }
+
+    .link-icon {
+      margin-right: 0;
+    }
+  }
+}
+
+.links {
+  display: grid;
+  text-align: left;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  padding: 6px 14px;
+  font-size: 12px;
+  border: 1px solid;
+  border-radius: 2px;
+  background-color: transparent;
+
+  &:hover {
+    color: #fff !important;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &-icon {
+    font-size: 16px;
+    margin-right: 10px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &.google {
+    color: $social-google;
+    border-color: $social-google;
+
+    &:hover {
+      background-color: $social-google;
+    }
+  }
+
+  &.windows {
+    color: $social-windows;
+    border-color: $social-windows;
+
+    &:hover {
+      background-color: $social-windows;
+    }
+  }
+
+  &.twitter {
+    color: $social-twitter;
+    border-color: $social-twitter;
+
+    &:hover {
+      background-color: $social-twitter;
+    }
+  }
+
+  &.facebook {
+    color: $social-facebook;
+    border-color: $social-facebook;
+
+    &:hover {
+      background-color: $social-facebook;
+    }
+  }
+
+  &.github {
+    color: $social-github;
+    border-color: $social-github;
+
+    &:hover {
+      background-color: $social-github;
+    }
+  }
+
+  &.vk {
+    color: $social-vk;
+    border-color: $social-vk;
+
+    &:hover {
+      background-color: $social-vk;
+    }
+  }
+
+  &.twitch {
+    color: $social-twitch;
+    border-color: $social-twitch;
+
+    &:hover {
+      background-color: $social-twitch;
+    }
+  }
+
+  &.linkedin {
+    color: $social-linkedin;
+    border-color: $social-linkedin;
+
+    &:hover {
+      background-color: $social-linkedin;
+    }
+  }
+
+  &.qq {
+    color: $social-qq;
+    border-color: $social-qq;
+
+    &:hover {
+      background-color: $social-qq;
+
+      svg g {
+        fill: #fff !important;
+      }
+    }
+  }
+
+  &.yahoo {
+    color: $social-yahoo;
+    border-color: $social-yahoo;
+
+    &:hover {
+      background-color: $social-yahoo;
+
+      svg {
+        fill: #fff !important;
+      }
+    }
+  }
+}
+
+.more-button {
+  background-color: #e6e9f0;
+  cursor: pointer;
+  border: 0;
+  width: 24px;
+  height: 34px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: #73859f;
+
+    .icon {
+      fill: #e6e9f0 !important;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    background-color: #73859f;
+
+    .icon {
+      fill: #e6e9f0 !important;
+    }
+  }
+
+  .icon {
+    width: 4px !important;
+    fill: #73859f !important;
+  }
+}

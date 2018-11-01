@@ -1,0 +1,66 @@
+.topics {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+  .item {
+    flex: 1;
+
+    &-all {
+      flex: 0;
+      min-width: 48px;
+
+      .button {
+        justify-content: center;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 6px;
+    }
+  }
+
+  .button {
+    font-size: 11px;
+    background-color: #e5e5e5;
+    padding: 8px 12px;
+    border: 0;
+    color: #404041;
+    cursor: pointer;
+    width: 100%;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: #dddddd;
+      text-decoration: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.active {
+      background-color: $blue;
+      color: #fff;
+
+      svg {
+        path {
+          fill: #fff !important;
+        }
+      }
+    }
+  }
+
+  svg {
+    margin-right: 8px;
+
+    path {
+      fill: $blue !important;
+    }
+  }
+}

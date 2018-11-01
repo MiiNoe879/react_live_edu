@@ -1,0 +1,45 @@
+.subscription-cta {
+  background-color: #2b2b2b;
+  padding-top: 52px;
+  padding-bottom: 72px;
+}
+
+.container {
+  @extend %container;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 32px;
+  color: #fdfdfd;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.cta {
+  padding: 18px 24px;
+  border-radius: 2px;
+  background-color: #2574a9;
+  color: #fdfdfd;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 256px;
+  text-align: center;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: none;
+    background-color: #2b85c2;
+    color: #fdfdfd;
+  }
+
+  &:focus {
+    outline: 0;
+    background-color: #1f628f;
+    color: #fdfdfd;
+  }
+}

@@ -1,0 +1,11 @@
+.signup {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container {
+  @extend %container;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}

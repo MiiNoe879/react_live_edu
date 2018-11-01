@@ -1,0 +1,151 @@
+.dropdown {
+  position: relative;
+  margin-left: 24px;
+  border-radius: 50%;
+  background-color: #424242;
+  margin-right: 16px;
+}
+
+.button {
+  border: 0;
+  background-color: transparent;
+  color: #424242;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  height: 48px;
+  width: 48px;
+  border-radius: 2px;
+  padding: 0;
+
+  &:hover {
+    cursor: pointer;
+
+    &:before {
+      border-top-color: #2574a9;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 4px solid #aaa;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    position: absolute;
+    top: 24px;
+    right: -16px;
+  }
+
+  &-active {
+    &:before {
+      border-top-color: #2574a9;
+    }
+  }
+
+  &-avatar {
+    border-radius: 50%;
+    color: #f3f3f3;
+    font-size: 10px;
+  }
+}
+
+.menu {
+  position: absolute;
+  z-index: $site-navigation-dropdown;
+  top: 72px;
+  right: -16px;
+  min-width: 208px;
+  list-style: none;
+  background-color: #f3f3f3;
+  text-align: left;
+  padding-left: 0;
+  padding-bottom: 12px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35);
+
+  &:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 5px solid #f3f3f3;
+    border-right: 5px solid #f3f3f3;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+    box-shadow: 2px -2px 3px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    transform-origin: 0 0;
+    transform: rotate(-45deg);
+    top: 0px;
+    right: 38px;
+  }
+
+  &-user {
+    display: flex;
+    align-items: center;
+    padding: 16px 8px 14px;
+
+    .left {
+      margin-right: 8px;
+    }
+
+    .icon {
+      width: 32px !important;
+      height: 32px !important;
+      fill: #ddd !important;
+
+      &-pro {
+        fill: #d69b1c !important;
+      }
+    }
+
+    .name {
+      margin-bottom: 0;
+      font-size: 15px;
+      color: #424242;
+      font-weight: 600;
+    }
+
+    .role {
+      margin-bottom: 0;
+      font-size: 11px;
+      color: #2574a9;
+      font-weight: 600;
+    }
+  }
+}
+
+.item {
+  font-size: 12px;
+}
+
+.link {
+  display: block;
+  padding: 5px 16px;
+  color: #777;
+  font-weight: 600;
+  background-color: transparent;
+  border: 0;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    background-color: #e5e5e5;
+    color: #777;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  padding: 7px 16px;
+  color: #424242;
+  font-weight: 700;
+}

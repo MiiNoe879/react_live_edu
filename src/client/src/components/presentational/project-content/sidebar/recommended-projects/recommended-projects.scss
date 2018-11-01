@@ -1,0 +1,25 @@
+.projects {
+  padding-top: 32px;
+}
+
+.title {
+  width: 224px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  color: #424242;
+  font-weight: 600;
+  margin-bottom: 19px;
+}
+
+.list {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.item {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}

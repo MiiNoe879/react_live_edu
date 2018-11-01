@@ -1,0 +1,27 @@
+.link {
+  display: inline-block;
+  font-size: 12px;
+  padding: 6px 24px;
+  border-radius: 2px;
+  margin-left: 8px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.login {
+  color: $blue;
+  min-width: 90px;
+}
+
+.signup {
+  color: #fff;
+  background-color: $blue;
+  min-width: 100px;
+  box-shadow: 0 2px 1px rgb(31, 98, 143);
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #2b85c2;
+  }
+}

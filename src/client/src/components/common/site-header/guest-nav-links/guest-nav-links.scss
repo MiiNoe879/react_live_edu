@@ -1,0 +1,58 @@
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  font-size: 14px;
+  color: #424242;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  line-height: 14px;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &-live {
+    &:hover {
+      color: #f1616d;
+    }
+  }
+
+  &-projects {
+    &:hover {
+      color: #2b85c2;
+    }
+  }
+
+  &-pricing {
+    .icon {
+      fill: #d69b1c !important;
+      width: 20px !important;
+      height: 20px !important;
+      margin-right: 6px;
+    }
+
+    &:hover {
+      color: #bd8919;
+    }
+  }
+}
+
+.divider {
+  width: 1px;
+  height: 32px;
+  background-color: #e5e5e5;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.live-dot {
+  width: 4px;
+  height: 4px;
+  background-color: #f4515e;
+  margin-left: 4px;
+}

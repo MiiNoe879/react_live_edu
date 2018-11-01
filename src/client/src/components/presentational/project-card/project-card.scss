@@ -1,0 +1,126 @@
+.card {
+  width: 222px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  position: relative;
+
+  &-featured {
+    width: 682px;
+
+    .title {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .thumb {
+      height: 382px !important;
+    }
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.title {
+  font-size: 16px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #424242;
+  @extend %word-break;
+}
+
+.live-badge {
+  color: #fbfbfb;
+  font-size: 12px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  background-color: $red;
+  padding: 2px 8px;
+
+  .dot {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #fbfbfb;
+    border-radius: 50%;
+    margin-left: 6px;
+  }
+}
+
+.upcoming-badge {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  background-color: #fbfbfb;
+  text-align: center;
+  color: #424242;
+  font-size: 10px;
+  padding: 2px 4px;
+  min-width: 72px;
+  min-height: 40px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  &-time {
+    font-size: 14px;
+  }
+}
+
+.thumb {
+  margin-bottom: 5px;
+  width: 100% !important;
+  height: 126px;
+  background-color: #acbbc5;
+  color: #424242;
+  font-size: 12px;
+}
+
+.desc {
+  margin-bottom: 2px;
+
+  .counts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-rating-icon {
+      font-size: 8px;
+    }
+
+    &-rating-total {
+      padding-top: 6px;
+    }
+  }
+}
+
+.followers {
+  color: #ababab;
+
+  .icon {
+    font-size: 12px;
+    margin-right: 8px;
+  }
+
+  .value {
+    font-size: 11px;
+  }
+}
+
+.username {
+  color: #aaa;
+  font-size: 11px;
+  margin-bottom: 0;
+  font-style: italic;
+
+  .with {
+    font-style: normal;
+  }
+}

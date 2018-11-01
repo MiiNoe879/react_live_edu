@@ -1,0 +1,52 @@
+.project-request {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-bottom: 32px;
+  margin-top: 32px;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: #424242;
+}
+
+.text {
+  font-size: 16px;
+  margin-bottom: 24px;
+  color: #424242;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #2980b9;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 2px;
+  padding: 8px 45px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  border: 0;
+  box-shadow: 0 2px 1px rgb(31, 98, 143);
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2b85c2;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.link {
+  color: #2980b9;
+  font-size: 14px;
+  text-decoration: underline;
+
+  &:hover {
+    color: #2b85c2;
+  }
+}

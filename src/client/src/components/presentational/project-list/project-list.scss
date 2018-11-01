@@ -1,0 +1,35 @@
+.project-list {
+  padding-bottom: 60px;
+}
+
+.title {
+  font-size: 32px;
+  color: #424242;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.tags {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: none;
+}
+
+.list {
+  padding-left: 0;
+  margin-bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(222px, 1fr));
+  grid-template-rows: auto;
+  grid-column-gap: 8px;
+  grid-row-gap: 29px;
+}
+
+.item {
+  color: #424242;
+
+  &-featured {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+}

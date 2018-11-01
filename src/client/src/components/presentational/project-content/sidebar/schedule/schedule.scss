@@ -1,0 +1,70 @@
+.schedule {
+}
+
+.timezone {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &-label {
+    font-size: 12px;
+    color: #aaaaaa;
+  }
+
+  &-select {
+    font-size: 12px;
+    color: #424242;
+    font-weight: 600;
+    text-align-last: right;
+    border: 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+    width: 102px;
+    padding: 6px 4px;
+
+    option {
+      direction: rtl;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.list {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.item {
+  display: flex;
+  color: #424242;
+  padding: 6px 16px;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+
+  &-header {
+    background-color: #0eaba6;
+    color: #fbfbfb;
+    border: 0;
+    padding: 14px 16px;
+  }
+  &-title {
+    text-align: right;
+    flex: 1;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  &-text {
+    width: 160px;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  &:nth-child(2) {
+    padding-top: 16px;
+  }
+  &:last-child {
+    padding-bottom: 18px;
+  }
+}

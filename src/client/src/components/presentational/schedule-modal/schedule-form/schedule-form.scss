@@ -1,0 +1,109 @@
+.form {
+  min-height: 460px;
+
+  &-input {
+    padding: 0px 10px;
+    border-radius: 2px;
+    background-color: #fff;
+    border: 1px solid #f3f3f3;
+    font-size: 12px;
+    color: #aaa;
+    height: 36px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  &-textarea {
+    background-color: #fff;
+    border: 1px solid #f3f3f3;
+    font-size: 12px;
+    color: #aaa;
+    display: block;
+    width: 100%;
+    resize: none;
+    padding: 6px 10px;
+    height: 120px;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .select {
+    margin-bottom: 10px;
+  }
+
+  .calendar {
+    &-label {
+      font-size: 16px;
+      color: #808080;
+    }
+    &-input {
+      margin-left: 8px;
+    }
+    &-wrapper {
+      background-color: #fff;
+      border: 1px solid #f3f3f3;
+      border-radius: 2px;
+      height: 32px;
+      margin-bottom: 8px;
+      padding: 2px 8px;
+      width: 100%;
+    }
+    &-select {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    &-container {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      z-index: 1;
+    }
+    &-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: transparent;
+      border: 0;
+      padding: 5px 14px;
+
+      &:focus {
+        outline: none;
+      }
+
+      .icon {
+        color: #ccc;
+      }
+    }
+  }
+
+  &-button {
+    width: 100%;
+    text-align: center;
+    border: 0;
+    border-radius: 2px;
+    background-color: #2574a9;
+    font-size: 14px;
+    color: #fbfbfb;
+    font-weight: 600;
+    box-shadow: 0px 2px 1px rgba(31, 98, 143, 1);
+    padding: 12px 24px;
+    cursor: pointer;
+    margin-top: 14px;
+
+    &:hover {
+      text-decoration: none;
+      background-color: #2b85c2;
+      color: #fdfdfd;
+    }
+
+    &:focus {
+      outline: 0;
+      background-color: #1f628f;
+      color: #fdfdfd;
+    }
+  }
+}

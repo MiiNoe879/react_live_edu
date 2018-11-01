@@ -1,0 +1,48 @@
+.nav {
+  display: flex;
+}
+
+.button {
+  width: 50%;
+  height: 36px;
+  border: 0;
+  border-bottom: 2px solid #777;
+  background-color: transparent;
+  color: #777;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom-color: #aaa;
+    color: #aaa;
+
+    .icon path {
+      fill: #aaa !important;
+    }
+  }
+
+  &.active {
+    border-bottom-color: #3097db;
+    background-color: #424242;
+    color: #fbfbfb;
+
+    &:hover {
+      border-bottom-color: #3097db;
+
+      .icon path {
+        fill: #3097db !important;
+      }
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.icon {
+  margin-right: 8px;
+}

@@ -1,0 +1,122 @@
+.filter {
+  padding: 32px 0 16px;
+  background-color: #fbfbfb;
+}
+
+.container {
+  @extend %container;
+}
+
+.top {
+}
+
+.bottom {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.categories-list {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+  .item {
+    flex: 1;
+
+    &:not(:last-child) {
+      margin-right: 6px;
+    }
+  }
+
+  .dropdown-button {
+    font-size: 11px;
+    background-color: #e5e5e5;
+    padding: 8px 12px;
+    border: 0;
+    color: #404041;
+    cursor: pointer;
+    width: 100%;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: 600;
+
+    &:hover {
+      background-color: #dddddd;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .icon {
+    margin-right: 10px;
+    color: #2574a9;
+  }
+}
+
+.applied-list {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+
+  .item {
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 6px;
+    }
+  }
+
+  .remove-button {
+    border: 0;
+    background-color: transparent;
+    font-size: 11px;
+    color: #ddd;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px 4px 4px 4px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.sort-filters {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+
+  .select {
+    border: 1px solid #f3f3f3;
+    border-radius: 0;
+    -webkit-appearance: none;
+    width: 100%;
+    max-width: 182px;
+    padding: 6px 8px;
+    font-size: 12px;
+    background-color: #fff;
+    color: #424242;
+
+    &:not(:last-child) {
+      margin-right: 6px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

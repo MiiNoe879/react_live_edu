@@ -1,0 +1,105 @@
+:global {
+  .global-faq-accordion {
+    width: 682px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+
+    .panel {
+      &__label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background: none;
+        border: none;
+        text-align: left;
+        transition: color 0.2s linear;
+        font-size: 14px;
+        color: #424242;
+        font-weight: 600;
+        padding: 14px 14px;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #ebebeb;
+      }
+
+      &__icon {
+        margin-right: 14px;
+        transform: rotate(0);
+        transition: transform 0.35s cubic-bezier(0.35, 0.05, 0.36, 1);
+      }
+
+      &__text {
+        font-size: 14px;
+        color: #424242;
+        line-height: 24px;
+      }
+
+      &__link {
+        border: 1px solid #73859f;
+        border-radius: 2px;
+        font-size: 12px;
+        color: #73859f;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 4px 8px;
+        margin-bottom: 22px;
+
+        &__icon {
+          margin-right: 8px;
+        }
+
+        &:hover {
+          text-decoration: none;
+          background-color: #73859f;
+          color: #fbfbfb;
+
+          .panel__link__icon {
+            path {
+              fill: #fbfbfb !important;
+            }
+          }
+        }
+      }
+
+      &[aria-expanded="true"] {
+        .panel__content {
+          opacity: 1;
+        }
+
+        .panel__label {
+          color: #424242;
+        }
+
+        .panel__icon {
+          transform: rotate(90deg);
+        }
+      }
+
+      &__inner {
+        padding-right: 14px;
+        overflow: hidden;
+        will-change: height;
+        transition: height 0.4s cubic-bezier(0.35, 0.05, 0.36, 1);
+      }
+
+      &__content {
+        opacity: 0;
+        transition: opacity 0.3s linear 0.18s;
+        padding-left: 45px;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        width: 100%;
+      }
+    }
+  }
+}

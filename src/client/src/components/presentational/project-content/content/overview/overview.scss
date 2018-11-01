@@ -1,0 +1,39 @@
+.overview {
+  margin-top: 28px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 26px;
+}
+
+.title {
+  font-size: 32px;
+  color: #424242;
+  line-height: 42px;
+}
+
+.content {
+  margin-top: 8px;
+  &-title {
+    font-size: 18px;
+    color: #424242;
+    font-weight: 600;
+    margin-bottom: 11px;
+  }
+  &-text {
+    font-size: 14px;
+    color: #424242;
+    line-height: 24px;
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
+  &-list {
+    list-style-type: disc;
+    list-style-position: inside;
+    font-size: 14px;
+    color: #424242;
+    line-height: 24px;
+    margin-bottom: 19px;
+  }
+}

@@ -1,0 +1,37 @@
+.form {
+  
+}
+
+.button {
+  font-size: 11px;
+  padding: 8px 12px;
+  border: 0;
+  color: #404041;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: left;
+  font-weight: 600;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  background-color: #fbfbfb;
+
+  &:hover {
+    border: 1px solid #e5e5e5;
+  }
+
+  &.active {
+    border: 1px solid #2574a9;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  svg {
+    margin-bottom: 14px;
+  }
+}

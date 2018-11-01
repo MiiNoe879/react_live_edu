@@ -1,0 +1,16 @@
+.directory {
+  padding-top: 16px;
+  padding-bottom: 32px;
+  @extend %container;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.list {
+  padding-left: 0;
+  margin-bottom: 0;
+}

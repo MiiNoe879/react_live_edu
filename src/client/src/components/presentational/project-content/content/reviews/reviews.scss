@@ -1,0 +1,163 @@
+.reviews {
+  padding-top: 23px;
+  border-top: 1px solid #ebebeb;
+  padding-bottom: 26px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 32px;
+  color: #424242;
+  line-height: 42px;
+  margin-bottom: 3px;
+}
+
+.button {
+  padding: 8px 32px;
+  border-radius: 2px;
+  background-color: #2574a9;
+  border: 0;
+  font-size: 12px;
+  color: #fdfdfd;
+  cursor: pointer;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: none;
+    color: #fdfdfd;
+    background-color: #2b85c2;
+  }
+
+  &:focus {
+    outline: 0;
+    background-color: #1f628f;
+    border-color: #1f628f;
+  }
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+
+  &-title {
+    font-size: 16px;
+    color: #424242;
+    margin-bottom: 4px;
+    margin-right: 8px;
+  }
+
+  &-icon {
+    font-size: 18px;
+  }
+
+  &-total {
+    font-size: 14px;
+    padding-top: 0;
+  }
+}
+
+.content {
+  margin-top: 8px;
+}
+
+.reviews-list {
+}
+
+.item {
+  margin-top: 24px;
+  display: flex;
+
+  &-left {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  &-right {
+    display: flex;
+    flex-flow: column;
+    padding-left: 16px;
+    padding-top: 4px;
+  }
+
+  &-avatar {
+    width: 48px;
+    height: 48px;
+    background-color: #424242;
+    border: 3px solid #424242;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &-img {
+      width: 100%;
+    }
+  }
+
+  &-icon {
+    margin-top: 20px;
+  }
+
+  &-username {
+    display: flex;
+    align-items: center;
+  }
+
+  &-name {
+    font-size: 14px;
+    color: #aaaaaa;
+    font-weight: 600;
+    font-style: italic;
+    padding-top: 3px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  &-rating-icon {
+    font-size: 8px;
+  }
+
+  &-time {
+    font-size: 11px;
+    color: #aaaaaa;
+    margin-bottom: 0;
+  }
+
+  &-text {
+    font-size: 14px;
+    color: #424242;
+    line-height: 24px;
+    margin-bottom: 24px;
+    margin-top: 14px;
+  }
+
+  &-divider {
+    max-width: 310px;
+    height: 1px;
+    background-color: #ebebeb;
+  }
+}
+
+.show-more {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 24px;
+
+  .button {
+    font-size: 12px;
+    color: #424242;
+    background-color: transparent;
+    border: 0;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
